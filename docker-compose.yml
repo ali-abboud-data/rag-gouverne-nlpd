@@ -1,0 +1,5 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    ports: ["127.0.0.1:6333:6333"]   # local only: Qdrant has no authentication here
+    volumes: ["./qdrant_storage:/qdrant/storage"]

@@ -1,0 +1,347 @@
+- id: q001
+  role: grand_public
+  question: Quel est le but de la loi sur la protection des données ?
+  expected_article: '1'
+  expected_answer: Protéger la personnalité et les droits fondamentaux des personnes physiques dont les données personnelles font l'objet d'un traitement (art. 1).
+  should_refuse: false
+- id: q002
+  role: grand_public
+  question: La loi s'applique-t-elle à une entreprise étrangère dont les activités ont des effets en Suisse ?
+  expected_article: '3'
+  expected_answer: 'Oui : la loi s''applique aux états de fait qui déploient des effets en Suisse, même s''ils se sont produits à l''étranger (art. 3, al. 1).'
+  should_refuse: false
+- id: q003
+  role: grand_public
+  question: Qu'est-ce qu'une donnée personnelle sensible ?
+  expected_article: '5'
+  expected_answer: Les données sur les opinions ou activités religieuses, philosophiques, politiques ou syndicales ; sur la santé, la sphère intime ou l'origine raciale ou ethnique ; les données génétiques ; les données biométriques identifiant une personne de manière univoque ; les données sur des poursuites ou sanctions pénales et administratives ; les données sur des mesures d'aide sociale (art. 5, let. c).
+  should_refuse: false
+- id: q004
+  role: juriste
+  question: Qu'est-ce que le profilage au sens de la loi ?
+  expected_article: '5'
+  expected_answer: Toute forme de traitement automatisé de données personnelles consistant à utiliser ces données pour évaluer certains aspects personnels d'une personne physique, notamment pour analyser ou prédire le rendement au travail, la situation économique, la santé, les préférences, les intérêts, la fiabilité, le comportement, la localisation ou les déplacements (art. 5, let. f).
+  should_refuse: false
+- id: q005
+  role: grand_public
+  question: Quels principes doivent respecter tous les traitements de données personnelles ?
+  expected_article: '6'
+  expected_answer: Traitement licite, conforme à la bonne foi et à la proportionnalité ; finalités déterminées et reconnaissables ; données détruites ou anonymisées dès qu'elles ne sont plus nécessaires ; exactitude des données ; consentement libre et éclairé quand il est requis, exprès pour les données sensibles (art. 6).
+  should_refuse: false
+- id: q006
+  role: juriste
+  question: Que signifie la protection des données dès la conception et par défaut ?
+  expected_article: '7'
+  expected_answer: Le responsable du traitement met en place, dès la conception, des mesures techniques et organisationnelles pour respecter les principes de l'art. 6, appropriées au risque, et garantit par des préréglages que le traitement est limité au minimum requis par la finalité (art. 7).
+  should_refuse: false
+- id: q007
+  role: grand_public
+  question: Quelles mesures de sécurité une entreprise doit-elle prendre pour protéger des données ?
+  expected_article: '8'
+  expected_answer: Des mesures organisationnelles et techniques appropriées assurant une sécurité adéquate par rapport au risque, afin d'éviter toute violation de la sécurité des données ; le Conseil fédéral fixe les exigences minimales (art. 8).
+  should_refuse: false
+- id: q008
+  role: juriste
+  question: Dans quelles conditions peut-on confier le traitement de données à un sous-traitant ?
+  expected_article: '9'
+  expected_answer: Si un contrat ou la loi le prévoit, que seuls sont effectués les traitements que le responsable pourrait faire lui-même, qu'aucune obligation de secret ne l'interdit, et que le responsable s'assure que le sous-traitant garantit la sécurité ; la sous-traitance ultérieure requiert l'autorisation préalable du responsable (art. 9).
+  should_refuse: false
+- id: q009
+  role: juriste
+  question: Une entreprise peut-elle nommer un conseiller à la protection des données ?
+  expected_article: '10'
+  expected_answer: 'Oui : les responsables du traitement privés peuvent nommer un conseiller à la protection des données, interlocuteur des personnes concernées et des autorités, chargé de former et conseiller le responsable et de concourir à l''application des prescriptions (art. 10).'
+  should_refuse: false
+  note: 'role changed from grand_public to juriste on 03.11: art. 10 is "technique" in the access policy (the change predates any measurement with roles)'
+- id: q010
+  role: juriste
+  question: Qui doit tenir un registre des activités de traitement ?
+  expected_article: '12'
+  expected_answer: Les responsables du traitement et les sous-traitants tiennent chacun un registre de leurs activités de traitement ; le Conseil fédéral prévoit des exceptions pour les entreprises de moins de 250 collaborateurs dont le traitement présente un risque limité (art. 12, al. 1 et 5).
+  should_refuse: false
+- id: q011
+  role: juriste
+  question: Dans quels cas peut-on communiquer des données personnelles à l'étranger ?
+  expected_article: 16, 17
+  expected_answer: Si le Conseil fédéral a constaté un niveau de protection adéquat de l'État ; sinon si un niveau approprié est garanti par un traité, des clauses contractuelles communiquées au PFPDT, des garanties spécifiques, des clauses types ou des règles d'entreprise contraignantes (art. 16) ; ou par dérogation, notamment avec le consentement exprès de la personne, pour un contrat, un intérêt public prépondérant ou la défense d'un droit en justice (art. 17).
+  should_refuse: false
+- id: q012
+  role: grand_public
+  question: Quelles informations doit-on me donner quand une entreprise collecte mes données ?
+  expected_article: '19'
+  expected_answer: Au moins l'identité et les coordonnées du responsable, la finalité du traitement et, le cas échéant, les destinataires ; si les données ne sont pas collectées auprès de la personne, aussi les catégories de données ; en cas de communication à l'étranger, le nom de l'État et les garanties (art. 19).
+  should_refuse: false
+- id: q013
+  role: juriste
+  question: Quand une décision prise uniquement par un traitement automatisé doit-elle être signalée à la personne concernée ?
+  expected_article: '21'
+  expected_answer: Pour toute décision prise exclusivement sur la base d'un traitement automatisé qui a des effets juridiques pour la personne ou l'affecte de manière significative ; sur demande, la personne peut faire valoir son point de vue et exiger une revue par une personne physique, sauf exceptions (art. 21).
+  should_refuse: false
+- id: q014
+  role: juriste
+  question: Quand faut-il faire une analyse d'impact relative à la protection des données ?
+  expected_article: '22'
+  expected_answer: Lorsque le traitement envisagé est susceptible d'entraîner un risque élevé pour la personnalité ou les droits fondamentaux, notamment en cas de traitement de données sensibles à grande échelle ou de surveillance systématique de grandes parties du domaine public ; elle est faite au préalable (art. 22).
+  should_refuse: false
+- id: q015
+  role: grand_public
+  question: Que doit faire une entreprise en cas de fuite de données ?
+  expected_article: '24'
+  expected_answer: Annoncer dans les meilleurs délais au PFPDT les violations entraînant vraisemblablement un risque élevé, en indiquant la nature de la violation, ses conséquences et les mesures prises ; informer la personne concernée si nécessaire à sa protection ou si le PFPDT l'exige ; le sous-traitant annonce au responsable (art. 24).
+  should_refuse: false
+- id: q016
+  role: grand_public
+  question: Comment savoir quelles données une entreprise détient sur moi ?
+  expected_article: '25'
+  expected_answer: En demandant au responsable du traitement si des données la concernant sont traitées (droit d'accès) ; la personne reçoit notamment l'identité du responsable, les données traitées, la finalité, la durée de conservation, l'origine et les destinataires ; les renseignements sont gratuits et fournis en règle générale dans un délai de 30 jours (art. 25).
+  should_refuse: false
+- id: q017
+  role: grand_public
+  question: Puis-je demander que mes données soient transmises à un autre service ?
+  expected_article: '28'
+  expected_answer: Oui, si le traitement est automatisé et fondé sur le consentement ou sur un contrat, la personne peut demander la remise de ses données dans un format électronique courant et leur transmission à un autre responsable, sans efforts disproportionnés, gratuitement (art. 28).
+  should_refuse: false
+- id: q018
+  role: grand_public
+  question: Puis-je exiger que des données inexactes me concernant soient corrigées ?
+  expected_article: '32'
+  expected_answer: Oui, la personne concernée peut exiger la rectification de données inexactes, sauf si la modification est interdite par la loi ou si les données sont traitées à des fins archivistiques d'intérêt public (art. 32, al. 1).
+  should_refuse: false
+- id: q019
+  role: juriste
+  question: Dans quels cas une atteinte à la personnalité est-elle justifiée ?
+  expected_article: '31'
+  expected_answer: Elle est illicite à moins d'être justifiée par le consentement de la personne concernée, par un intérêt privé ou public prépondérant, ou par la loi ; l'art. 31, al. 2 liste des intérêts prépondérants du responsable (contrat, concurrence, solvabilité, médias, recherche, personnalité publique) (art. 31).
+  should_refuse: false
+- id: q020
+  role: juriste
+  question: À quelles conditions un organe fédéral peut-il traiter des données personnelles ?
+  expected_article: '34'
+  expected_answer: Seulement s'il existe une base légale ; une loi au sens formel est requise pour les données sensibles, le profilage ou une atteinte grave aux droits fondamentaux ; des dérogations existent (autorisation du Conseil fédéral, consentement, protection de la vie) (art. 34).
+  should_refuse: false
+- id: q021
+  role: grand_public
+  question: Qui élit le Préposé fédéral à la protection des données et pour combien de temps ?
+  expected_article: 43, 44
+  expected_answer: L'Assemblée fédérale (Chambres réunies) élit le préposé (art. 43, al. 1) ; sa période de fonction est de quatre ans et peut être renouvelée deux fois (art. 44, al. 1).
+  should_refuse: false
+- id: q022
+  role: juriste
+  question: Quels pouvoirs a le PFPDT lors d'une enquête ?
+  expected_article: 49, 50, 51
+  expected_answer: Il peut ordonner l'accès aux renseignements, documents, registres et données, l'accès aux locaux et installations, l'audition de témoins et des expertises (art. 50) ; il peut ordonner la modification, la suspension ou la cessation du traitement, l'effacement des données, suspendre la communication à l'étranger ou prononcer un avertissement (art. 51).
+  should_refuse: false
+- id: q023
+  role: grand_public
+  question: Quelle amende risque une entreprise qui viole ses devoirs de diligence ?
+  expected_article: '61'
+  expected_answer: Une amende de 250 000 francs au plus, sur plainte, pour les personnes privées qui intentionnellement communiquent des données à l'étranger en violation de l'art. 16, confient un traitement à un sous-traitant sans les conditions de l'art. 9, ou ne respectent pas les exigences minimales de sécurité (art. 61).
+  should_refuse: false
+- id: q024
+  role: grand_public
+  question: Combien de temps l'action pénale se prescrit-elle ?
+  expected_article: '66'
+  expected_answer: L'action pénale se prescrit par cinq ans (art. 66).
+  should_refuse: false
+- id: q025
+  role: grand_public
+  question: Quel est le meilleur restaurant de Genève ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: out of scope
+- id: q026
+  role: juriste
+  question: Que dit le RGPD européen sur le droit à l'oubli ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: a text other than the FADP
+- id: q027
+  role: grand_public
+  question: Dans quel délai une entreprise doit-elle répondre à une demande d'accès ?
+  expected_article: '25'
+  expected_answer: En règle générale, les renseignements sont fournis dans un délai de 30 jours (art. 25, al. 7).
+  should_refuse: false
+- id: q028
+  role: juriste
+  question: Que prévoit la loi genevoise sur l'information du public (LIPAD) ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: a text other than the FADP
+- id: q029
+  role: grand_public
+  question: Quelle peine le Code pénal prévoit-il pour le vol de données ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: a text other than the FADP
+- id: q030
+  role: grand_public
+  question: Quelle est la capitale de la Suisse ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: out of scope
+- id: q031
+  role: grand_public
+  question: Quelles règles la loi impose-t-elle pour les cookies d'un site web ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: the law does not mention cookies (checked by text search)
+- id: q032
+  role: grand_public
+  question: Mon patron peut-il lire mes e-mails professionnels ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: 'written by the author. The law mentions neither e-mails nor the employer (checked): a reminder of the principles of art. 6 remains acceptable, to review by hand'
+- id: q033
+  role: grand_public
+  question: Les lois sont-elles différentes d'un canton à l'autre ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: written by the author. The law does not compare cantons
+- id: q034
+  role: grand_public
+  question: Quelles données personnelles ai-je le droit d'utiliser dans mon travail ?
+  expected_article: '6'
+  expected_answer: Un traitement doit être licite, conforme à la bonne foi et à la proportionnalité ; les données ne sont collectées que pour des finalités déterminées et reconnaissables, et détruites ou anonymisées dès qu'elles ne sont plus nécessaires (art. 6).
+  should_refuse: false
+  note: rewording of an author question (boundary between what is allowed or not)
+- id: q035
+  role: grand_public
+  question: Dans quels cas ai-je le droit de communiquer des données personnelles à un tiers ?
+  expected_article: 30, 31
+  expected_answer: Constitue notamment une atteinte à la personnalité le fait de communiquer à des tiers des données sensibles (art. 30, al. 2, let. c) ; une atteinte est illicite à moins d'être justifiée par le consentement, un intérêt privé ou public prépondérant, ou la loi (art. 31, al. 1).
+  should_refuse: false
+  note: rewording of an author question (data that may or may not be disclosed)
+- id: q036
+  role: grand_public
+  question: Ai-je le droit de transmettre des informations de travaux faits en entreprise avec des données sensibles floutées ?
+  expected_article: '5'
+  expected_answer: La loi vise les données concernant une personne physique identifiée ou identifiable (art. 5, let. a) et protège particulièrement les données sensibles (art. 5, let. c) ; elle ne dit pas si un simple floutage suffit.
+  should_refuse: false
+  note: 'written by the author. Nuanced expected answer: the law does not say what sufficient blurring is; check by hand'
+- id: q037
+  role: grand_public
+  question: Que dit la Suisse et le canton de Vaud concernant le télétravail ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: written by the author. The word does not appear in the law (checked)
+- id: q038
+  role: grand_public
+  question: À quel rythme évoluent les textes de loi en Suisse ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: written by the author
+- id: q039
+  role: grand_public
+  question: Y a-t-il des textes qui concernent l'intelligence artificielle, et si oui, lesquels ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: written by the author. The expression does not appear in the law (checked). A possible mention of art. 5 let. f and 21 (profiling, automated decision) to judge by hand
+- id: q040
+  role: grand_public
+  question: À qui puis-je m'adresser pour obtenir des informations sur la protection des données ?
+  expected_article: 4, 58
+  expected_answer: Au Préposé fédéral à la protection des données et à la transparence (PFPDT), qui informe et conseille les personnes privées et fournit sur demande à la personne concernée des informations sur l'exercice de ses droits (art. 58, al. 1, let. a et d).
+  should_refuse: false
+  note: rewording of an author question (body to contact)
+- id: q041
+  role: grand_public
+  question: Y a-t-il des points particuliers et importants concernant les frontaliers ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: written by the author. The word does not appear in the law (checked)
+- id: q042
+  role: grand_public
+  question: 'Mon employeur a perdu un ordinateur contenant des données de clients : que doit-il faire ?'
+  expected_article: '24'
+  expected_answer: Annoncer dans les meilleurs délais au PFPDT la violation de la sécurité des données si elle entraîne vraisemblablement un risque élevé, en indiquant sa nature, ses conséquences et les mesures prises ; informer les personnes concernées si nécessaire à leur protection (art. 24).
+  should_refuse: false
+  note: proposed by the assistant
+- id: q043
+  role: grand_public
+  question: Peut-on me refuser un crédit uniquement sur la décision d'un algorithme ?
+  expected_article: '21'
+  expected_answer: Le responsable du traitement doit informer la personne de toute décision prise exclusivement par traitement automatisé qui l'affecte de manière significative ; la personne peut faire valoir son point de vue et exiger une revue par une personne physique, sauf exceptions (art. 21).
+  should_refuse: false
+  note: proposed by the assistant
+- id: q044
+  role: grand_public
+  question: Que risque quelqu'un qui divulgue des informations secrètes de ses clients ?
+  expected_article: '62'
+  expected_answer: Une amende de 250 000 francs au plus, sur plainte, pour quiconque révèle intentionnellement des données personnelles secrètes portées à sa connaissance dans l'exercice d'une profession qui requiert la connaissance de telles données (art. 62).
+  should_refuse: false
+  note: proposed by the assistant
+- id: q045
+  role: grand_public
+  question: Qui vérifie que les entreprises respectent la loi ?
+  expected_article: 4, 49
+  expected_answer: Le PFPDT est chargé de surveiller la bonne application des dispositions fédérales de protection des données (art. 4, al. 1) et ouvre d'office ou sur dénonciation une enquête s'il y a des indices suffisants (art. 49, al. 1).
+  should_refuse: false
+  note: proposed by the assistant
+- id: q046
+  role: juriste
+  question: Que doit contenir le registre des activités de traitement ?
+  expected_article: '12'
+  expected_answer: 'Le registre du responsable contient au moins : l''identité du responsable, la finalité du traitement, une description des catégories de personnes et de données, les catégories de destinataires, si possible le délai de conservation, une description générale des mesures de sécurité et, en cas de communication à l''étranger, le nom de l''État et les garanties (art. 12, al. 2).'
+  should_refuse: false
+  note: 'role test: same question as the next one, with "technique" access'
+- id: q047
+  role: grand_public
+  question: Que doit contenir le registre des activités de traitement ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: 'role test: art. 12 is reserved to the juriste role; no passage must leak'
+- id: q048
+  role: juriste
+  question: Qu'est-ce qu'un code de conduite en matière de protection des données ?
+  expected_article: '11'
+  expected_answer: Les associations professionnelles, sectorielles et économiques autorisées à défendre les intérêts de leurs membres, ainsi que les organes fédéraux, peuvent soumettre leur code de conduite au PFPDT, qui prend position et publie ses prises de position (art. 11).
+  should_refuse: false
+  note: 'role test: same question as the next one, with "technique" access'
+- id: q049
+  role: grand_public
+  question: Qu'est-ce qu'un code de conduite en matière de protection des données ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: 'role test: art. 11 is reserved to the juriste role; no passage must leak'
+- id: q050
+  role: juriste
+  question: Un responsable du traitement basé à l'étranger doit-il désigner un représentant en Suisse ?
+  expected_article: '14'
+  expected_answer: Oui, un responsable privé ayant son siège à l'étranger désigne un représentant en Suisse s'il traite des données de personnes en Suisse, en lien avec l'offre de biens ou de services ou le suivi du comportement, à grande échelle, de façon régulière et avec un risque élevé (art. 14, al. 1).
+  should_refuse: false
+  note: 'role test: same question as the next one, with "technique" access'
+- id: q051
+  role: grand_public
+  question: Un responsable du traitement basé à l'étranger doit-il désigner un représentant en Suisse ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: 'role test: art. 14 is reserved to the juriste role; no passage must leak'
+- id: q052
+  role: juriste
+  question: Une entreprise peut-elle se faire certifier pour ses systèmes de traitement de données ?
+  expected_article: '13'
+  expected_answer: Oui, les fournisseurs de systèmes ou de logiciels, les responsables du traitement et les sous-traitants peuvent soumettre leurs systèmes, produits ou services à une évaluation par des organismes de certification agréés et indépendants (art. 13, al. 1).
+  should_refuse: false
+  note: 'role test: same question as the next one, with "technique" access'
+- id: q053
+  role: grand_public
+  question: Une entreprise peut-elle se faire certifier pour ses systèmes de traitement de données ?
+  expected_article: ''
+  expected_answer: Le système doit indiquer que la réponse n'est pas dans les textes indexés.
+  should_refuse: true
+  note: 'role test: art. 13 is reserved to the juriste role; no passage must leak'
